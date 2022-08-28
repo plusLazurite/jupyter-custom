@@ -1,0 +1,2 @@
+current theme: onedork
+path: C:\Users\[username]\.jupyter\custom
