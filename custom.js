@@ -127,7 +127,7 @@ require(["nbextensions/snippets_menu/main"], function (snippets_menu) {
   var pandas_custom = {
     name: "pandas_custom",
     "sub-menu": [
-      {
+      { // First check
         name: "First check",
         snippet: [
           "df.shape",
@@ -138,12 +138,31 @@ require(["nbextensions/snippets_menu/main"], function (snippets_menu) {
           "df.describe()",
         ],
       },
-      {
+      { // Basic stats
         name: "Basic stats",
         "sub-menu": [
           {
             name: "quantile",
             snippet: ["bp_sr.quantile()", "bp_df.quantile()"],
+          },
+        ],
+      },
+      { // plot
+        name: "plot",
+        "sub-menu": [
+          {
+            name: "scatter plot",
+            snippet: [
+              "df.plot(kind='scatter', x='col_x', y='col_y', alpha=0.1)",
+            ],
+          },
+          {
+            name: "scatter_matrix",
+            snippet: [
+              "import pandas as pd",
+              "",
+              "pd.scatter_matrix(df, figsize=(16, 9))",
+            ],
           },
         ],
       },
@@ -170,6 +189,24 @@ require(["nbextensions/snippets_menu/main"], function (snippets_menu) {
   var scikit_learn = {
     name: "scikit_learn",
     "sub-menu": [
+      { // impute
+        name: "impute",
+        "sub-menu": [
+          {
+            name: "SimpleImputer",
+            snippet: [
+              "# na 처리",
+              "from sklearn.impute import SimpleImputer",
+              "",
+              "imputer = SimpleImputer(strategy='median')",
+              "imputer.fit(df)",
+              "imputer.statistics_  # df.median().values",
+              "X = imputer.transform(df)  # np array",
+              "df_tr = pd.DataFrame(X, columns=df.columns, index=df.index)",
+            ],
+          },
+        ],
+      },
       { // pipeline
         name: "pipeline",
         "sub-menu": [
@@ -370,9 +407,22 @@ require(["nbextensions/snippets_menu/main"], function (snippets_menu) {
           {
             name: "train_test_split",
             snippet: [
+              "# homl 88/953",
               "from sklearn.model_selection import train_test_split",
               "",
+              "train_set, test_set = train_test_split(housing, test_size=0.2, random_state=42)",
               "X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 42)",
+            ],
+          },
+          {
+            name: "StratifiedShuffleSplit",
+            snippet: [
+              "from sklearn.model_selection import StratifiedShuffleSplit",
+              "",
+              "split = StratifiedShuffleSplit(n_splits = 1, test_size = 0.2, random_state = 42)",
+              "for train_index, test_index in split.split(housing, housing['income_cat']):",
+              "    strat_train_set = housing.loc[train_index]  # strat: stratified",
+              "    strat_test_set = housing.loc[test_index]",
             ],
           },
           {
@@ -399,6 +449,27 @@ require(["nbextensions/snippets_menu/main"], function (snippets_menu) {
       { // preprocessing
         name: "preprocessing",
         "sub-menu": [
+          {
+            name: "OrdinalEncoder",
+            snippet: [
+              "from sklearn.preprocessing import OrdinalEncoder",
+              "",
+              "ordinal_encoder = OrdinalEncoder()",
+              "df_encoded = ordinal_encoder.fit_transform(df)",
+              "ordinal_encoder.categories_  # 추정기의 '학습된 모델 파라미터'",
+            ],
+          },
+          {
+            name: "OneHotEncoder",
+            snippet: [
+              "from sklearn.preprocessing import OneHotEncoder",
+              "",
+              "cat_encoder = OneHotEncoder()",
+              "df_1hot = cat_encoder.fit_transform(df)  # output은 사이파이 희소 행렬",
+              "cat_encoder.categories_  # 추정기의 '학습된 모델 파라미터'",
+              "df_1hot.toarray()  # ndarray로",
+            ],
+          },
           {
             name: "StandardScaler",
             snippet: [
