@@ -145,7 +145,7 @@ div.running_list_info.toolbar_info {
  vertical-align: text-top;
 }
 .fa-folder:before {
- color: #4c8be2;
+ color: #fdca3e;
 }
 .fa-arrow-up:before {
  font-size: 14px;
@@ -165,7 +165,7 @@ span#sort-name.btn.btn-xs.btn-default.sort-action:hover .fa {
  -webkit-font-smoothing: antialiased;
  -moz-osx-font-smoothing: grayscale;
  content: "\f07b";
- color: #4c8be2;
+ color: #fdca3e;
 }
 .notebook_icon:before {
  display: inline-block;
