@@ -1476,10 +1476,10 @@ a {
  -webkit-font-smoothing: subpixel-antialiased;
  font-weight: 400;
 }
-div.input_area {
+div.input_area {  /* 코드 셀 배경? */
  background-color: #2c303c;
  background: #2c303c;
- padding-right: 1.2em;
+ padding-right: 0px;
  border: 0px;
  border-radius: 0px;
  border-top-right-radius: 4px;
@@ -3017,9 +3017,9 @@ div.tooltiptext.bigtooltip {
 .cm-s-ipython.CodeMirror { /* 코드 셀(code cell) 부분 */
  font-family: "Roboto Mono", "Malgun Gothic", monospace, monospace, "Malgun Gothic";
  font-size: 12pt;
- background: #2c303c;
- color: #b5c2d9;
- border-radius: 2px;
+ background: #000000;  /* 컬러 */
+ color: #b5c2d9;  /* bracket 색깔? */
+ border-radius: 2px;  /* 사각형 모서리 */
  font-style: normal;
  font-weight: normal;
 }
