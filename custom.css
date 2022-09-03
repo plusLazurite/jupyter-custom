@@ -3038,7 +3038,7 @@ div.tooltiptext.bigtooltip {
  background: #353a48;
  border: none;
  border-radius: 0px;
- width: 36px;
+ width: 20px;  /* gutter 폭 */
 }
 .cm-s-ipython .CodeMirror-linenumber {
  color: #526488;
