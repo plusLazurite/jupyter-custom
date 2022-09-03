@@ -1486,6 +1486,7 @@ div.input_area {  /* 코드 셀 배경? */
  border-bottom-right-radius: 4px;
 }
 div.cell {
+ margin: 10px;
  padding: 0px;
  background: #0f0f0f;  /* 코드 셀 왼쪽 여백 부분 */
  background-color: #0f0f0f;  /* 코드 셀 왼쪽 여백 부분 */
@@ -1496,7 +1497,7 @@ div.cell {
 div.cell.selected {
  background: #0f0f0f;  /* 코드 셀 왼쪽 여백 부분 */
  background-color: #0f0f0f;  /* 코드 셀 왼쪽 여백 부분 */
- border: thin solid #2c303c;  /* 셀 테두리 */
+ border: 2.5px solid #2c303d;  /* 선택된 셀 테두리 */
  padding: 0px;
  border-radius: 5px;
 }
@@ -1504,7 +1505,7 @@ div.cell.selected {
  padding: 0px;
  background: #0f0f0f;  /* 코드 셀 왼쪽 여백 부분 */
  background-color: #0f0f0f;  /* 코드 셀 왼쪽 여백 부분 */
- border: thin solid #1d1e23;  /* 셀 테두리 */
+ border: 2.5px solid #2c303d;  /* 셀 테두리 */
  border-radius: 5px;
 }
 div.cell.edit_mode {
@@ -2922,11 +2923,11 @@ div.CodeMirror pre {
  line-height: 170%;
  color: #b5c2d9;
 }
-div.CodeMirror-lines { /* 코드 셀 패딩 */
+div.CodeMirror-lines {  /* 코드 셀 패딩 */
  padding-bottom: 0em;
  padding-left: 0em;
  padding-right: 0em;
- padding-top: 0em;
+ padding-top: 1em;
 }
 span.ansiblack,
 .ansi-black-fg {
