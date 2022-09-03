@@ -29,8 +29,8 @@ div.body {
 }
 body.notebook_app {
  padding: 0;
- background-color: #1d1e23;
- background: #1d1e23;
+ background-color: #0f0f0f;  /* 배경 색 */
+ background: #0f0f0f;  /* 배경 색 */
  padding-right: 0px !important;
  overflow-y: hidden;
 }
@@ -467,11 +467,11 @@ div#notebook {
  background-color: #1d1e23;
 }
 #notebook-container {
- padding: 13px 2px;
+ padding: 13px 5px;  /* 위아래 왼쪽오른쪽 */
  background-color: #1d1e23;
  min-height: 0px;
  box-shadow: none;
- width: 90%;
+ width: 100%;
  margin-right: auto;
  margin-left: auto;
 }
