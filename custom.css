@@ -1687,7 +1687,7 @@ div.cell.code_cell.rendered.unselected.jupyter-soft-selected .run_this_cell:hove
  background: #33517c !important;
  color: #33517c !important;
 }
-div.output_wrapper {
+div.output_wrapper {  /* 출력 부분 왼쪽 오른쪽 경계 */
  background-color: #373e4b;
  border: 0px;
  left: 0px;
@@ -1701,7 +1701,7 @@ div.output_subarea.output_text {
  font-family: "Roboto Mono", monospace, monospace;
  font-size: 10pt !important;
  line-height: 150% !important;
- background-color: #373e4b;
+ background-color: #000000;
  color: #b1bed6;
  border-top-right-radius: 0px;
  border-top-left-radius: 0px;
