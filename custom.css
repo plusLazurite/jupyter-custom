@@ -3030,7 +3030,7 @@ div.tooltiptext.bigtooltip {
  border: none;
  border-right: 1px solid #353a48 !important;
  background-color: #353a48 !important;
- background: #353a48 !important;
+ background: #000000 !important;
  border-radius: 0px;
  white-space: nowrap;
 }
