@@ -467,11 +467,11 @@ div#notebook {
  background-color: #1d1e23;
 }
 #notebook-container {
- padding: 13px 5px;  /* 위아래 왼쪽오른쪽 */
- background-color: #1d1e23;
+ padding: 0px 0px;  /* 위아래 왼쪽오른쪽 */
+ background-color: #0f0f0f;
  min-height: 0px;
  box-shadow: none;
- width: 100%;
+ width: 95%;
  margin-right: auto;
  margin-left: auto;
 }
@@ -1625,7 +1625,7 @@ div.prompt,
 }
 div.prompt.input_prompt {
  font-size: 9pt !important;
- background-color: #0f0f0f;  /* 코드 셀 왼쪽, `In []:` 이 부분 색*/
+ background-color: #0f0f0f;  /* 코드 셀 왼쪽, `In []:` 이 부분 배경 색*/
  border-top: 0px;
  border-top-right-radius: 0px;
  border-bottom-left-radius: 0px;
@@ -2922,11 +2922,11 @@ div.CodeMirror pre {
  line-height: 170%;
  color: #b5c2d9;
 }
-div.CodeMirror-lines {
- padding-bottom: .9em;
- padding-left: .5em;
- padding-right: 1.5em;
- padding-top: .7em;
+div.CodeMirror-lines { /* 코드 셀 패딩 */
+ padding-bottom: 0em;
+ padding-left: 0em;
+ padding-right: 0em;
+ padding-top: 0em;
 }
 span.ansiblack,
 .ansi-black-fg {
