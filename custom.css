@@ -1806,8 +1806,8 @@ div.text_cell_render {  /* 마크다운(markdown) 서식 */
  letter-spacing: 0.05em;
  line-height: 160% !important;  /* original: 130% !important; */ 
  color: #abb7ce;
- background: #000000;
- background-color: #000000;
+ background: #0f0f0f;
+ background-color: #0f0f0f;
  border-radius: 0px;
 }
 div .text_cell_render {
@@ -1823,8 +1823,8 @@ div.cell.text_cell .CodeMirror-lines {
 }
 div.cell.text_cell.unrendered div.input_area,
 div.cell.text_cell.rendered div.input_area {
- background-color: #000001;
- background: #000001;
+ background-color: #0f0f0f;  /* 마크다운 edit_mode일 때 색 */
+ background: #0f0f0f;  /* 마크다운 edit_mode일 때 색 */
  border: 0px;
  border-radius: 2px;
 }
@@ -1882,12 +1882,12 @@ div.cell.text_cell.rendered .prompt {
  text-align: right !important;
  min-width: 14.5ex !important;
  width: 14.5ex !important;
- background-color: #000000;  /* 마크다운 unselected일 때 왼쪽 여백 */
+ background-color: #0f0f0f;  /* 마크다운 unselected일 때 왼쪽 여백 */
  border-right: 2px solid rgba(148,204,114,.3);
- border-left: 4px solid #2c303c;
+ border-left: 4px solid #0f0f0f;
 }
-div.cell.text_cell.unrendered .prompt {
- font-family: "Roboto Mono", monospace, monospace;
+div.cell.text_cell.unrendered .prompt {  /* 실행되지 않은 마크다운 왼쪽 여백 */
+ font-family: "Roboto Mono", 'Malgun Gothic', monospace, monospace;
  font-size: 9.5pt !important;
  font-weight: normal;
  color: #526488 !important;
@@ -1909,7 +1909,7 @@ div.cell.text_cell.rendered.selected .prompt {
 div.text_cell.unrendered.selected .prompt,
 div.text_cell.rendered.selected .prompt {
  top: 0;
- background: #000000;  /* 마크다운 셀 selected일 때 왼쪽 여백 부분 */
+ background: #0f0f0f;  /* 마크다운 셀 selected일 때 왼쪽 여백 부분 */
  border-left: 4px solid #48536f;
  border-right: 2px solid rgba(148,204,114,.3);
 }
@@ -1985,13 +1985,13 @@ div.rendered_html pre {
  margin-left: 6px;
 }
 div.text_cell_render pre,
-div.text_cell_render code {  /* 마크다운 코드 서식 */
+div.text_cell_render code {  /* 마크다운 안에서 코드 서식 */
  font-family: "Roboto Mono", 'Malgun Gothic', monospace, monospace;
  font-size: 12pt !important;
  line-height: 170% !important;
  color: #abb7ce;
- background: #000000;
- background-color: #000000;
+ background: #0f0f0f;
+ background-color: #0f0f0f;
  max-width: 80%;
  border-radius: 0px;
  border-left: none;
