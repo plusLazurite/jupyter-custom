@@ -1487,24 +1487,24 @@ div.input_area {  /* 코드 셀 배경? */
 }
 div.cell {
  padding: 0px;
- background: #000000;
- background-color: #000000;  /* 코드 셀 왼쪽 여백 부분 */
- border: medium solid #1d1e23;
+ background: #0f0f0f;  /* 코드 셀 왼쪽 여백 부분 */
+ background-color: #0f0f0f;  /* 코드 셀 왼쪽 여백 부분 */
+ border: thin solid #1d1e23;  /* 셀 테두리 */
  border-radius: 4px;
  top: 0;
 }
 div.cell.selected {
- background: #000000;
- background-color: #000000;
- border: medium solid #1d1e23;
+ background: #0f0f0f;  /* 코드 셀 왼쪽 여백 부분 */
+ background-color: #0f0f0f;  /* 코드 셀 왼쪽 여백 부분 */
+ border: thin solid #2c303c;  /* 셀 테두리 */
  padding: 0px;
  border-radius: 5px;
 }
 .edit_mode div.cell.selected {
  padding: 0px;
- background: #000000;
- background-color: #000000;
- border: medium solid #1d1e23;
+ background: #0f0f0f;  /* 코드 셀 왼쪽 여백 부분 */
+ background-color: #0f0f0f;  /* 코드 셀 왼쪽 여백 부분 */
+ border: thin solid #1d1e23;  /* 셀 테두리 */
  border-radius: 5px;
 }
 div.cell.edit_mode {
@@ -1544,7 +1544,7 @@ div.cell.text_cell.selected.jupyter-soft-selected:before {
  border-color: #48536f !important;
 }
 div.cell.code_cell .input {
- border-left: 5px solid #000000 !important;
+ border-left: 5px solid #0f0f0f !important;  /* 코드 셀 unselected일 때 왼쪽 indicator */
  border-radius: 3px;
  border-bottom-left-radius: 3px;
  border-top-left-radius: 3px;
@@ -1625,7 +1625,7 @@ div.prompt,
 }
 div.prompt.input_prompt {
  font-size: 9pt !important;
- background-color: #000000;
+ background-color: #0f0f0f;  /* 코드 셀 왼쪽, `In []:` 이 부분 색*/
  border-top: 0px;
  border-top-right-radius: 0px;
  border-bottom-left-radius: 0px;
@@ -3017,7 +3017,7 @@ div.tooltiptext.bigtooltip {
 .cm-s-ipython.CodeMirror { /* 코드 셀(code cell) 부분 */
  font-family: "Roboto Mono", "Malgun Gothic", monospace, monospace, "Malgun Gothic";
  font-size: 12pt;
- background: #000000;  /* 컬러 */
+ background: #0f0f0f;  /* 컬러 */
  color: #b5c2d9;  /* bracket 색깔? */
  border-radius: 2px;  /* 사각형 모서리 */
  font-style: normal;
@@ -3030,8 +3030,8 @@ div.tooltiptext.bigtooltip {
  border: none;
  border-left: 1px solid #353a48 !important;
  border-right: 1px solid #353a48 !important;
- background-color: #353a48 !important;
- background: #000000 !important;
+ background-color: #0f0f0f !important;  /* gutter 부분 색 */
+ background: #0f0f0f !important;  /* gutter 부분 색 */
  border-radius: 0px;
  white-space: nowrap;
 }
