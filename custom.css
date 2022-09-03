@@ -1990,8 +1990,8 @@ div.text_cell_render code {
  font-size: 12pt !important;
  line-height: 170% !important;
  color: #abb7ce;
- background: #1d1e23;
- background-color: #1d1e23;
+ background: #000000;
+ background-color: #000000;
  max-width: 80%;
  border-radius: 0px;
  border-left: none;
