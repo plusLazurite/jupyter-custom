@@ -176,7 +176,7 @@ span#sort-name.btn.btn-xs.btn-default.sort-action:hover .fa {
  -moz-osx-font-smoothing: grayscale;
  content: "\f02d";
  position: relative;
- color: #94c273 !important;
+ color: #f57c00 !important;
  top: 0px;
 }
 .file_icon:before {
@@ -653,7 +653,7 @@ div.notification_widget.info,
  color: #4c8be2;
 }
 .running_notebook_icon:before {
- color: #94c273 !important;
+ color: #9ce866 !important;
  font: normal normal normal 15px/1 FontAwesome;
  font-size: 15px;
  text-rendering: auto;
