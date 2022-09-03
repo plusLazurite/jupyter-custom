@@ -23,8 +23,8 @@ div.body {
  font-family: sans-serif;
  font-size: 14pt;
  color: #899ab8;
- background-color: #1d1e23;
- background: #1d1e23;
+ background-color: #0f0f0f;
+ background: #0f0f0f;
  -webkit-font-smoothing: antialiased !important;
 }
 body.notebook_app {
@@ -207,6 +207,7 @@ div#notebook_toolbar div.dynamic-instructions {
 span#login_widget > .button,
 #logout {
  font-family: "Proxima Nova", sans-serif;
+ font-size: 10pt;
  color: #899ab8;
  background: transparent;
  background-color: transparent;
@@ -215,7 +216,6 @@ span#login_widget > .button,
  box-shadow: none;
  text-shadow: none;
  border-radius: 3px;
- margin-right: 10px;
  padding: 2px 7px;
 }
 span#login_widget > .button:hover,
@@ -254,8 +254,8 @@ body > #header #header-container {
  -webkit-box-sizing: border-box;
 }
 body > #header {
- background: #1d1e23;
- background-color: #1d1e23;
+ background: #0f0f0f;
+ background-color: #0f0f0f;
  position: relative;
  z-index: 100;
 }
@@ -464,7 +464,7 @@ div#notebook {
  padding-top: 4px;
 }
 .notebook_app {
- background-color: #1d1e23;
+ background-color: #0f0f0f;
 }
 #notebook-container {
  padding: 0px 0px;  /* 위아래 왼쪽오른쪽 */
@@ -476,6 +476,8 @@ div#notebook {
  margin-left: auto;
 }
 div#ipython-main-app.container {
+ background: #0f0f0f;
+ background-color: #0f0f0f;
  width: 90%;
  margin-right: auto;
  margin-left: auto;
@@ -486,6 +488,8 @@ div#ipython-main-app.container {
  width: 90%;
  margin-right: auto;
  margin-left: auto;
+ background: #0f0f0f;
+ background-color: #0f0f0f;
 }
 div#menubar-container {
  width: 100%;
@@ -497,7 +501,7 @@ div#header-container {
 .notebook_app #header,
 .edit_app #header {
  box-shadow: none !important;
- background-color: #1d1e23;
+ background-color: #0f0f0f;
  border-bottom: 2px solid rgba(80,92,133,.22);
 }
 #header,
@@ -514,7 +518,7 @@ div#header-container {
 }
 body > #header .header-bar {
  width: 100%;
- background: #1d1e23;
+ background: #2c303d;
 }
 span.checkpoint_status,
 span.autosave_status {
@@ -528,7 +532,7 @@ div#menubar {
 }
 #menubar .navbar,
 .navbar-default {
- background-color: #1d1e23;
+ background-color: #0f0f0f;
  margin-bottom: 0px;
  margin-top: 0px;
 }
@@ -553,12 +557,12 @@ p.navbar-text.indicator_area {
 }
 .navbar-default .navbar-nav > li > a {
  font-family: sans-serif;
- font-size: 14pt; /* 14 */
+ font-size: 12pt; /* 14 */
  color: #899ab8;
  display: block;
  line-height: 1.5em; /* 1.5em */
- padding-top: 4px; /* 14px */
- padding-bottom: 11px; /* 11px */
+ padding-top: 0px; /* 14px */
+ padding-bottom: 0px; /* 11px */
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -686,7 +690,7 @@ div.notification_area {
  float: right !important;
  position: static;
  cursor: pointer;
- padding-top: 6px;
+ padding-top: 0px;
  padding-right: 4px;
 }
 div#notification_notebook.notification_widget.btn.btn-xs.navbar-btn {
@@ -705,20 +709,18 @@ div#notification_notebook.notification_widget.btn.btn-xs.navbar-btn {
 #kernel_indicator {
  float: right !important;
  color: #7aa05d;
- background: #1d1e23;
- background-color: #1d1e23;
+ background: #0f0f0f;
+ background-color: #0f0f0f;
  border-left: 2px solid #7aa05d;
- padding-top: 0px;
- padding-bottom: 4px;
- margin-top: 10px !important;
+ margin-top: 0px !important;
  margin-left: -2px;
  padding-left: 5px !important;
 }
 #kernel_indicator .kernel_indicator_name {
- font-size: 17px;
+ font-size: 14px;
  color: #7aa05d;
- background: #1d1e23;
- background-color: #1d1e23;
+ background: #0f0f0f;
+ background-color: #0f0f0f;
  padding-left: 5px;
  padding-right: 5px;
  margin-top: 4px;
@@ -727,21 +729,21 @@ div#notification_notebook.notification_widget.btn.btn-xs.navbar-btn {
 }
 .kernel_idle_icon:before {
  display: inline-block;
- font: normal normal normal 22px/1 FontAwesome;
- font-size: 22px;
+ font: normal normal normal 15px/1 FontAwesome;
+ font-size: 15px;
  text-rendering: auto;
  -webkit-font-smoothing: antialiased;
  cursor: pointer;
  margin-left: 0px !important;
  opacity: 0.7;
- vertical-align: bottom;
+ vertical-align: middle;
  margin-top: 1px;
  content: "\f1db";
 }
 .kernel_busy_icon:before {
  display: inline-block;
- font: normal normal normal 22px/1 FontAwesome;
- font-size: 22px;
+ font: normal normal normal 15px/1 FontAwesome;
+ font-size: 15px;
  -webkit-animation: pulsate 2s infinite ease-out;
  animation: pulsate 2s infinite ease-out;
  text-rendering: auto;
@@ -803,7 +805,7 @@ div.notification_widget {
  margin-left: 0px;
  padding-right: 0px;
  vertical-align: text-top !important;
- margin-top: 6px !important;
+ margin-top: 0px !important;
  z-index: 1000;
 }
 #kernel_logo_widget,
@@ -827,13 +829,13 @@ i.fa.fa-icon {
 }
 .dropdown-menu {
  font-family: sans-serif;
- font-size: 14pt;
+ font-size: 12pt;
  box-shadow: none;
  padding: 0px;
  text-align: left;
  border: none;
- background-color: #353b49;
- background: #353b49;
+ background-color: #151515;
+ background: #151515;
  line-height: 1;
 }
 .dropdown-menu:hover {
@@ -914,9 +916,9 @@ div.kse-dropdown > .dropdown-menu,
 .btn-default {
  font-family: sans-serif;
  color: #899ab8;
- background: #303542;
- background-color: #303542;
- border: 2px solid #303542;
+ background: #1f1f1f;
+ background-color: #1f1f1f;
+ border: 2px solid #1f1f1f;
  font-weight: normal;
  box-shadow: none;
  text-shadow: none;
@@ -1378,7 +1380,7 @@ textarea {
 }
 select.form-control.select-xs {
  height: 33px;
- font-size: 14pt;
+ font-size: 12pt;
 }
 .toolbar select,
 .toolbar label {
@@ -1390,9 +1392,9 @@ select.form-control.select-xs {
  font-size: 92%;
  margin-left: 10px;
  padding: 0px;
- background: #303542 !important;
- background-color: #303542 !important;
- border: 2px solid #303542 !important;
+ background: #1f1f1f !important;
+ background-color: #1f1f1f !important;
+ border: 2px solid #1f1f1f !important;
 }
 .form-control:focus {
  border-color: #7aa05d;
@@ -1625,7 +1627,7 @@ div.prompt,
  width: 10.5ex !important;
 }
 div.prompt.input_prompt {
- font-size: 9pt !important;
+ font-size: 8pt !important;
  background-color: #0f0f0f;  /* 코드 셀 왼쪽, `In []:` 이 부분 배경 색*/
  border-top: 0px;
  border-top-right-radius: 0px;
@@ -1799,7 +1801,7 @@ div.text_cell,
 div.text_cell_render pre,
 div.text_cell_render {  /* 마크다운(markdown) 서식 */
  font-family: "Calibri", "Arial", "Cambria", "Times New Roman", "Malgun Gothic", monospace, monospace;  /* original: sans-serif */
- font-size: 14pt;
+ font-size: 11pt;
  letter-spacing: 0.05em;
  line-height: 160% !important;  /* original: 130% !important; */ 
  color: #abb7ce;
@@ -1985,7 +1987,7 @@ div.rendered_html pre {
 div.text_cell_render pre,
 div.text_cell_render code {  /* 마크다운 안에서 코드 서식 */
  font-family: "Roboto Mono", 'Malgun Gothic', monospace, monospace;
- font-size: 12pt !important;
+ font-size: 10.5pt !important;
  line-height: 170% !important;
  color: #abb7ce;
  background: #0f0f0f;
@@ -2538,7 +2540,7 @@ div.collapsible_headings_toggle .fa-caret-right:before {
  border-style: solid;
  border-width: thin;
  border-right-width: medium !important;
- background-color: #1d1e23 !important;
+ background-color: #0f0f0f !important;
 }
 #toc-wrapper.ui-draggable.ui-resizable.sidebar-wrapper {
  border-color: rgba(80,92,133,.22) !important;
@@ -2924,7 +2926,7 @@ div.CodeMirror-lines {  /* 코드 셀 패딩 */
  padding-bottom: 0em;
  padding-left: 0em;
  padding-right: 0em;
- padding-top: 1em;
+ padding-top: 0em;
 }
 span.ansiblack,
 .ansi-black-fg {
@@ -3014,7 +3016,7 @@ div.tooltiptext.bigtooltip {
 }
 .cm-s-ipython.CodeMirror { /* 코드 셀(code cell) 부분 */
  font-family: "Roboto Mono", "Malgun Gothic", monospace, monospace, "Malgun Gothic";
- font-size: 12pt;
+ font-size: 10.5pt;
  background: #0f0f0f;  /* 컬러 */
  color: #b5c2d9;  /* bracket 색깔? */
  border-radius: 2px;  /* 사각형 모서리 */
@@ -3248,6 +3250,7 @@ body :focus .MathJax {
 }
 div#maintoolbar {
  margin-left: 8px !important;
+ padding-top: 1px;
 }
 .toolbar.container {
  width: 100% !important;
@@ -3255,9 +3258,9 @@ div#maintoolbar {
 span.save_widget span.filename {
  margin-left: 8px;
  height: initial;
- font-size: 100%;
+ font-size: 10pt;
  color: #7aa05d;
- background-color: #2c303c;
+ background-color: #0f0f0f;
 }
 span.save_widget span.filename:hover {
  color: #94c273;
