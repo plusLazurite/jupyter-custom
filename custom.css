@@ -3038,7 +3038,7 @@ div.tooltiptext.bigtooltip {
  background: #353a48;
  border: none;
  border-radius: 0px;
- width: 20px;  /* gutter 폭 */
+ width: 30px;  /* gutter 폭 */
 }
 .cm-s-ipython .CodeMirror-linenumber {
  color: #526488;
@@ -3049,12 +3049,12 @@ div.tooltiptext.bigtooltip {
 .CodeMirror-linenumber,
 div.CodeMirror-linenumber,
 .CodeMirror-gutter.CodeMirror-linenumberdiv.CodeMirror-gutter.CodeMirror-linenumber {
- padding-right: 1px;
+ padding-right: 0px;
  margin-left: 0px;
  margin: 0px;
- width: 26px !important;
+ width: 5px !important;
  padding: 0px;
- text-align: right;
+ text-align: left;
 }
 .CodeMirror-linenumber {
  color: #526488;
