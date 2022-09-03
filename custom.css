@@ -1544,7 +1544,7 @@ div.cell.text_cell.selected.jupyter-soft-selected:before {
  border-color: #48536f !important;
 }
 div.cell.code_cell .input {
- border-left: 5px solid #2c303c !important;
+ border-left: 5px solid #000000 !important;
  border-radius: 3px;
  border-bottom-left-radius: 3px;
  border-top-left-radius: 3px;
